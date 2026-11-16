@@ -1,7 +1,17 @@
 # Cloud Computing Fundamentals
 
 ## Introduction
-Cloud computing is the delivery of computing services such as servers, storage, databases, networking, software, analytics, and intelligence over the internet (the cloud). Instead of owning physical hardware, users can access resources on demand from cloud providers.
+Cloud computing means using computing resources over the internet instead of purchasing and maintaining your own physical hardware.
+
+### Real-world example: building a website
+
+Without cloud computing, you would need to:
+
+- Purchase a physical server.
+- Install an operating system.
+- Configure networking.
+- Maintain the server.
+- Pay for electricity and maintenance.
 
 ## Key Characteristics
 - On-demand self-service: Resources can be provisioned automatically without manual intervention.
