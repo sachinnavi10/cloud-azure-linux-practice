@@ -2,7 +2,7 @@
 
 ## What is Linux?
 
-Linux is an open-source operating system kernel. A Linux distribution combines the Linux kernel with system tools and applications to make a complete operating system. Linux is used to manage computer hardware, software, files, users, and processes.
+Linux is an open-source operating system used to manage computer hardware, software, files, users and processes.
 
 Common distributions include:
 
