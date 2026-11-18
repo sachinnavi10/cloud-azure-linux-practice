@@ -1,0 +1,1 @@
+My first Azure Linux server inside it

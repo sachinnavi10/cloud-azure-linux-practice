@@ -219,3 +219,134 @@ Be careful with `rm`: deleted files may not go to the Recycle Bin. Check the fil
 ## Summary
 
 Linux is an important operating system family for cloud computing. Practicing basic terminal commands in Git Bash builds skills for working with Azure Linux virtual machines and other cloud servers.
+
+# Linux Fundamentals - Day 3
+
+## File permissions
+
+Linux file permissions control who can read, write, or execute a file. There are three permission types:
+
+| Permission | Meaning | Symbol |
+|---|---|---|
+| Read | View file content | `r` |
+| Write | Modify file content | `w` |
+| Execute | Run a file | `x` |
+
+The numeric permission format uses these values:
+
+- `4` = read
+- `2` = write
+- `1` = execute
+
+For example:
+
+```sh
+chmod 755 script.sh
+```
+
+This grants the owner read, write, and execute permissions, while the group and others receive read and execute permissions.
+
+### Practical exercise
+
+```sh
+touch test.txt
+ls -l test.txt
+chmod 644 test.txt
+ls -l test.txt
+```
+
+The expected permissions pattern is:
+
+```text
+-rw-r--r--
+```
+
+Git Bash emulates Linux permissions over the Windows filesystem, so exact permission behavior can differ from a native Linux server.
+
+## User management
+
+Useful user commands include:
+
+| Command | Purpose |
+|---|---|
+| `whoami` | Show the current username |
+| `id` | Show user and group IDs |
+| `who` | Show logged-in users |
+| `passwd` | Change a password |
+| `sudo` | Execute a command with elevated privileges |
+
+Try these in Git Bash:
+
+```sh
+whoami
+id
+who
+```
+
+Commands such as `sudo`, `useradd`, and `passwd` require a complete Linux user-management system and may not work as in a native Linux environment.
+
+## Process management
+
+A process is a running program or application.
+
+| Command | Purpose |
+|---|---|
+| `ps` | Display processes |
+| `ps aux` | Display detailed process information |
+| `top` | Monitor processes interactively |
+| `kill` | Terminate a process |
+| `jobs` | Display background jobs |
+
+```sh
+ps
+ps aux
+```
+
+## Disk and memory management
+
+Check disk space:
+
+```sh
+df -h
+```
+
+Check folder size:
+
+```sh
+du -sh .
+```
+
+Check the current directory:
+
+```sh
+pwd
+```
+
+Check available memory on Linux:
+
+```sh
+free -h
+```
+
+These commands help cloud engineers identify disk pressure, large directories, and memory usage on servers.
+
+## Day 3 practical assignment
+
+```sh
+mkdir day3-practice
+cd day3-practice
+touch server.sh
+echo "My Azure Linux Server" > server.sh
+cat server.sh
+chmod 644 server.sh
+ls -l
+```
+
+Practice system monitoring:
+
+```sh
+whoami
+ps
+df -h
+du -sh .
+```
